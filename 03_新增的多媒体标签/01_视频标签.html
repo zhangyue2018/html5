@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增视频标签</title>
+    <style>
+        .video {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!--必须要有controls属性才行，autoplay必须在设置muted的时候才会生效-->
+    <video class="video" src="./src/video.mp4" controls muted autoplay loop></video>
+    <!--poster 视频封面-->
+    <video class="video" src="./src/video.mp4" controls muted loop poster="./src/111.jpeg"></video>
+    <!--预加载 preload: auto/metadata/none-->
+    <video class="video" src="./src/video.mp4" controls preload="auto"></video>
+</body>
+</html>
